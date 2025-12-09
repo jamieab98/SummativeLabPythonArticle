@@ -1,0 +1,1 @@
+from .wordcount import count_specific_word
