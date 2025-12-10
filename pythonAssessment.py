@@ -6,4 +6,4 @@ with open("news_article.txt", "r") as f:
 sample = 'Peter apple snapple apple.'
 
 #count_specific_word(article, "apple")
-identify_most_common_word(article)
+#identify_most_common_word(article)
