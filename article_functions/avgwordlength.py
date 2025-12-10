@@ -9,7 +9,7 @@ def calculate_average_word_length(text):
             exit
         elif clean_word == "":
             exit
-        elif clean_word not in clean_words:
+        else:
             clean_words.append(clean_word)
     
     length_list = []
