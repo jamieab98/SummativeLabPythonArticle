@@ -20,7 +20,10 @@ def calculate_average_word_length(text):
     for length in length_list:
         total_length += length
 
-    average = total_length / len(length_list)
+    if total_length == 0:
+        average = 0
+    else:
+        average = total_length / len(length_list)
     print(average)
     #make a a list of every unique word (repeated words don't matter)
 
