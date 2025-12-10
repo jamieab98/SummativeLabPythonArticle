@@ -1,2 +1,3 @@
 from .wordcount import count_specific_word
 from .mostcommonword import identify_most_common_word
+from .avgwordlength import calculate_average_word_length

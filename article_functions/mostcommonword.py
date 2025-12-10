@@ -1,7 +1,6 @@
 import string
 
 def identify_most_common_word(text):
-    #iterate through the article and create a list of every word present where words don't repeat
     word_counts = {}
     logged_words = []
     words = text.split()
@@ -21,4 +20,3 @@ def identify_most_common_word(text):
             most_common = word
             word_count = word_counts[word]
     print (most_common, word_count)
-    #make this a dictionary where the key is each word and the value is the number of times the word is iterated over
