@@ -7,4 +7,4 @@ sample = 'Peter apple snapple apple.'
 
 #count_specific_word(article, "apple")
 #identify_most_common_word(article)
-calculate_average_word_length(article)
+#calculate_average_word_length(article)
