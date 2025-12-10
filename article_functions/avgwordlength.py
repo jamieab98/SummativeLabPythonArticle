@@ -7,8 +7,11 @@ def calculate_average_word_length(text):
         clean_word = w.strip(string.punctuation + string.whitespace + '“”').lower()
         if clean_word not in clean_words:
             clean_words.append(clean_word)
-            print(clean_word)
-    print(clean_words)
+    
+    length_list = []
+    for word in clean_words:
+        length_list.append(len(word))
+
 
     #make a a list of every unique word (repeated words don't matter)
 
