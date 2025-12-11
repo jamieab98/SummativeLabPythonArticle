@@ -9,4 +9,4 @@ sample = 'Peter apple snapple apple.'
 #identify_most_common_word(article)
 #calculate_average_word_length(article)
 #count_paragraphs(article)
-count_sentences(article)
+#count_sentences(article)
