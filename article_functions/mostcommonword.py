@@ -19,4 +19,7 @@ def identify_most_common_word(text):
         if word_counts[word] > word_count:
             most_common = word
             word_count = word_counts[word]
+    
+    if text == "":
+        most_common = "None"
     print (most_common, word_count)
