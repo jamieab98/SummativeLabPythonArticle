@@ -63,18 +63,11 @@ def calculate_average_word_length(text):
     print(average)
 
 def count_paragraphs(text):
-    paragraphs = text.splitlines()
-    paragraph_count = 1
-    ticker = 0
-
-    for paragraph in paragraphs:
-        if paragraph == "":
-            ticker += 1
-        elif paragraph != "":
-            ticker = 0
-        if ticker == 2:
-            ticker = 0
-            paragraph_count += 1
+    paragraphs = text.split("\n\n")
+    if text == "":
+        paragraph_count = 1
+    else:
+        paragraph_count = len(paragraphs)
     print(paragraph_count)
 
 def count_sentences(text):
@@ -90,3 +83,7 @@ def count_sentences(text):
         if sentence[-1] in sentence_separator:
             sentence_count += 1
     print(sentence_count)
+
+count_paragraphs("This is a test.\n\nThis is only a test.")
+count_paragraphs("apple apple banana\n\nbanana banana\n\nbanana")
+count_paragraphs("")
