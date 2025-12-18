@@ -12,7 +12,6 @@ def count_specific_word(text, word):
         i += 1
     print(count)
 
-
 def identify_most_common_word(text):
     word_counts = {}
     logged_words = []
