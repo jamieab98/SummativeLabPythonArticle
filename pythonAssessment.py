@@ -83,7 +83,3 @@ def count_sentences(text):
         if sentence[-1] in sentence_separator:
             sentence_count += 1
     print(sentence_count)
-
-count_paragraphs("This is a test.\n\nThis is only a test.")
-count_paragraphs("apple apple banana\n\nbanana banana\n\nbanana")
-count_paragraphs("")
