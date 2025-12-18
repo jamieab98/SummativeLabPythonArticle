@@ -1,8 +1,7 @@
 import string
 
-with open("news_article.txt", "r") as f:
-    article = f.read()
-sample = 'Peter apple snapple apple.'
+#with open("news_article.txt", "r") as f:
+#    article = f.read()
 
 def count_specific_word(text, word):
     words = text.split()
@@ -91,9 +90,3 @@ def count_sentences(text):
         if sentence[-1] in sentence_separator:
             sentence_count += 1
     print(sentence_count)
-
-#count_specific_word(article, "the")
-#identify_most_common_word(article)
-#calculate_average_word_length(article)
-#count_paragraphs(article)
-#count_sentences(article)
