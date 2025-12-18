@@ -1,16 +1,17 @@
 import string
 
-#with open("news_article.txt", "r") as f:
-#    article = f.read()
-
 def count_specific_word(text, word):
     words = text.split()
     count = 0
-    for w in words:
+    i = 0
+    while i < len(words):
+        w = words[i]
         w_clean = w.lower().strip(string.punctuation + string.whitespace).strip('“”')
         if w_clean == word.lower().strip(string.punctuation + string.whitespace):
             count += 1
+        i += 1
     print(count)
+
 
 def identify_most_common_word(text):
     word_counts = {}
